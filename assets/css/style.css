@@ -14,17 +14,26 @@ header{
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-evenly;
-}
-header .hiS {
-    
+    justify-content: space-around;
 }
 header button {
-
+    background-color: transparent;
+    border: 0px solid;
+    outline: none;
+    text-decoration: none;
 }
 header .timer{
-
+    border-width: 3px;
+    font-size: x-large;
+    padding: 4x;
+    border-color: rgb(243, 193, 250);
 }
 header button:hover{
     text-decoration: underline;
+}
+body .startScreen{
+
+}
+.questionSect, .endScreen, .scores{
+    display: none;
 }
