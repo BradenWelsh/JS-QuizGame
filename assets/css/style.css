@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(251, 235, 253);
+}
+header{
+    background-color: rgb(241, 199, 247);
+    padding: 20px 0 20px;
+    border: 4px black solid;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .hiS {
+    
+}
+header button {
+
+}
+header .timer{
+
+}
+header button:hover{
+    text-decoration: underline;
+}
