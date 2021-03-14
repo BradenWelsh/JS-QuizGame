@@ -5,8 +5,11 @@
 }
 
 body{
-    background-color: rgb(251, 235, 253);
+    background-color: rgb(250, 229, 253);
 }
+
+/* Header */
+
 header{
     background-color: rgb(241, 199, 247);
     padding: 20px 0 20px;
@@ -31,9 +34,66 @@ header .timer{
 header button:hover{
     text-decoration: underline;
 }
+
+/* Start Screen */
+
 body .startScreen{
+    text-align: center;
+    font-size: xx-large;
+}
+.startScreen button{
+    font-size: x-large;
+    border: 2px rgb(243, 153, 255) solid;
+    background-color: rgb(241, 199, 247);
+}
+
+/* Questions */
+
+.questionSect{
+    text-align: center;
+    margin: 25px auto 0 auto;
+    width: 700px;
+    
+}
+.questionSect ul{
+    text-align: left;
+    list-style: none;
+}
+.questionSect button{
+    font-size:large;
+    margin: 5px;
+    border: 2px rgb(243, 153, 255) solid;
+    background-color: rgb(241, 199, 247);
+}
+
+/* End Screen */
+
+.endScreen {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.endScreen button{
+    border: 2px rgb(243, 153, 255) solid;
+    background-color: rgb(241, 199, 247);
+}
+
+/* High Score */
+
+.scores{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+}
+.scores button {
+    border: 2px rgb(243, 153, 255) solid;
+    background-color: rgb(241, 199, 247);
+
 
 }
-.questionSect, .endScreen, .scores{
+
+.questionSect, .endScreen, .scores{ 
     display: none;
 }
