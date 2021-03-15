@@ -30,7 +30,8 @@ var check = document.querySelector("#check");
 // End Screen
 var score = document.querySelector("#endScore");
 var initials = document.querySelector("#input");
-var endScreen = document.querySelector("#endScreen")
+var endScreen = document.querySelector("#endScreen");
+var scores = document.querySelector("#scores");
 
 var highScores = [];
 var storedHighScores = [];
@@ -142,7 +143,7 @@ function final(){
     score.textContent = timeLeft;
 
     endScreen.style.display = "block";
-    viewHiS.style.display = "block";
+    scores.style.display = "block";
     questionScreen = "none";
     clearInterval(timerInterval);
     getStorage();
@@ -189,8 +190,7 @@ retryB.addEventListener("click", function(){
 
 viewHiS.addEventListener("click", function(){
     startScreen.style.display = "none";
-    viewHiS.style.display = "block";
-    document.getElementById("").disabled = true;
+    scores.style.display = "block";
     getStorage();
 })
 
