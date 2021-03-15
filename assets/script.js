@@ -141,10 +141,9 @@ function checkAnswer(event){
 }
 function final(){
     score.textContent = timeLeft;
-
     endScreen.style.display = "block";
     scores.style.display = "block";
-    questionScreen = "none";
+    questionScreen.style.display = "none";
     clearInterval(timerInterval);
     getStorage();
 }
@@ -152,11 +151,9 @@ function final(){
 function saveScore(){
     var user = initials.value.toUpperCase();
     highScores.push({initial: user, score: timeLeft});
-    for(var i = 0; i  < highScores.length; i++){
         var list = document.createElement("li");
-        list.textContent = highScores[i].initial  + "                  " + highScores[i].score;
+        list.textContent = user  + "                  " + timeLeft;
         scoreList.appendChild(list);
-    }
     localStorage.setItem("highScores", JSON.stringify(highScores));
 }
 
